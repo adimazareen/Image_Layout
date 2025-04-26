@@ -6,6 +6,8 @@ import os
 
 openai.api_key = "your-api-key"
 
+
+
 def generate_caption(prompt):
     response = openai.ChatCompletion.create(
         model="gpt-4",
