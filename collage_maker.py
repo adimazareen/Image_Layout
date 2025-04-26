@@ -4,9 +4,7 @@ import numpy as np
 import openai
 import os
 
-openai.api_key = "your-api-key"
-
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_caption(prompt):
     response = openai.ChatCompletion.create(
